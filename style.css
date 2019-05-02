@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    font-family: Helvetica;
+}
+.navbar .fa-bars
+{
+    color: #fff;
+    font-size: 35px;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.nav-link
+{
+    float: right;
+    margin-right: 8px !important;
+    margin-left: 8px !important;
+    color: black;
+    padding: 5px 0 !important;
+    border-bottom: 2px solid transparent;
+}
+.nav-link:hover
+{
+    color: #fff;
+    border-bottom: 2px solid #397e24;
+    transition: 0.7s;
+}
+
+.navigation
+{
+    display: block;
+    box-shadow: 0 0 5px 0  #fff;
+}
+.title-name{
+    color:black;
+    text-align: center;
+}

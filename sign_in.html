@@ -1,0 +1,53 @@
+<html>
+<head>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+    <title> Transparent Login Form Design </title>
+    <link rel="stylesheet" type="text/css" href="sign_in.css">   
+</head>
+<body>
+    <div class="login-box">
+        <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <div>
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Enter Your Email id" required>
+            <p>Password</p>
+            <input type="password" id="Password" name="pass" placeholder="Enter Password">
+            <input type="checkbox" onclick="showpass()">
+            <p>Show Password</p>
+            <input type="submit" onclick="login()" name="submit" value="Login">
+
+            <input type="submit" onclick="forgetpass()" name="submit1" value="forget password">
+            <p>New Here?Not Signed in?</p>
+            <a href="sign_up.html">Join Now</a>
+        </div>
+
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+
+    <script>
+        // TODO: Replace the following with your app's Firebase project configuration
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCfPDJog9KalErpwTGtVVw9kdilGLaABas",
+            authDomain: "working-corner.firebaseapp.com",
+            databaseURL: "https://working-corner.firebaseio.com",
+            projectId: "working-corner",
+            storageBucket: "working-corner.appspot.com",
+            messagingSenderId: "863601904950"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="sign_in_firebase.js"></script>
+    <script type="text/javascript" src="forgetPass.js"></script>
+    <script type="text/javascript" src="showPassword.js"></script>
+
+
+</body>
+</html>

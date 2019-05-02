@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title> Transparent Login Form Design </title>
+    <link rel="stylesheet" type="text/css" href="post-offer-style.css">
+</head>
+<body>
+    <div class="post">
+        <img src="avatar.png" class="avatar">
+        <h1>Post Here</h1>
+        <label for="category"><b>Category : </b></label>
+          <select name="category" id="category">
+            <option value="Part Time"> Part Time</option>
+            <option value="General Labor"> General Labor</option>
+            <option value="Engineering"> Engineering</option>
+            <option value="Banking & Finance"> Banking & Finance</option>
+            <option value="Internships & College"> Internships & College</option>
+            <option value="Health Care"> Health Care</option>
+          </select>
+        <p>Post Name</p>
+        <input type="text" name="post_name" placeholder="Enter the vacant post name">
+        <p>Organization Name</p>
+        <input type="text" name="Organization_name" placeholder="Enter the organization name">
+        <p>Join Time</p>
+        <input type="text" name="Join_time" placeholder="Enter the join time">
+        <p>Salary(per month)</p>
+        <input type="text" name="salary" placeholder="Enter the salary">
+        <p>Requirement for the post</p>
+        <input type="text" name="Requirement" placeholder="Enter the Requirement">
+        <p>Description</p>
+        <input type="text" name="Description" placeholder="Enter the description here">
+        <p>Contact</p>
+        <input type="text" name="Contact" placeholder="Enter the contact_info">
+        <input type="submit" onclick="postmsg()" name="post" value="post">
+
+    </div>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+
+    <script>
+        // TODO: Replace the following with your app's Firebase project configuration
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCfPDJog9KalErpwTGtVVw9kdilGLaABas",
+            authDomain: "working-corner.firebaseapp.com",
+            databaseURL: "https://working-corner.firebaseio.com",
+            projectId: "working-corner",
+            storageBucket: "working-corner.appspot.com",
+            messagingSenderId: "863601904950"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="post-offer.js"></script>
+    <script type="text/javascript" src="postofferpage.js"></script>
+    <script type="text/javascript" src="loginpage.js"></script>
+    <script type="text/javascript" src="postedmsg.js"></script>
+
+</body>
+</html>

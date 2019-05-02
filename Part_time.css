@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#ffffcc,#ccff33);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    display: flex;
+}
+.comment {
+  
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-top:10px;
+    margin-left:5
+    
+    0px;
+}
+
+.comment input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+}

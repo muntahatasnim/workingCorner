@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title> Transparent Sign Up Form Design </title>
+    <link rel="stylesheet" type="text/css" href="sign_up_style.css">   
+</head>
+    <body>
+    <div class="signup-box">
+    <img src="avatar.png" class="avatar">
+        <h1>Sign Up</h1>
+           <div>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <p>Email</p>
+            <input type="text" name="Email" placeholder="Enter Valid Email id" required>
+            <p>Password</p>
+            <input type="password" id="Password" name="pass" placeholder="Enter Password">
+            <input type="checkbox" onclick="showpass()">
+            <p>Show Password</p>
+            <input type="submit" onclick="signup()" name="submit" value="Sign Up">
+            <p>Already have an account?</p>
+            <a href="sign_in.html">Sign in Here</a>   
+          </div>
+        </div>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+  <script>
+  var config = {
+    apiKey: "AIzaSyCfPDJog9KalErpwTGtVVw9kdilGLaABas",
+    authDomain: "working-corner.firebaseapp.com",
+    databaseURL: "https://working-corner.firebaseio.com",
+    projectId: "working-corner",
+    storageBucket: "working-corner.appspot.com",
+    messagingSenderId: "863601904950"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="sign_up_firebase.js"></script>
+<script type="text/javascript" src="showPassword.js"></script>
+</body>
+</html>
+
